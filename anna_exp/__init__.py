@@ -1,5 +1,4 @@
-from .fetch_data import *
-from .est_param import *
-from prepare_model import *
+from . import fetch_data
+from . import prepare_model
 
 
