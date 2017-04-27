@@ -97,6 +97,7 @@ def normalize_genotypes(G):
         G = (G-G.mean(axis=0))/(G.std(axis=0)+1e-10)
         print "0 standard deviation"
     else: G = (G-G.mean(axis=0))/G.std(axis=0)
+    return G
 
 def get_gene_info_from_rownames(pheno,i):
     line = pheno.index.values[i].split('-') #row names contain chrom,TSS,gene_name
