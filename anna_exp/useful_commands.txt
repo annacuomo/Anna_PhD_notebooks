@@ -1,0 +1,65 @@
+# Garvan (GWCCG)
+
+# dice
+ssh anncuo@129.94.72.16
+
+# brenner (login: TV$)
+ssh anncuo@brenner-fpga.garvan.unsw.edu.au
+
+cisco VPN: vpn.unsw.edu.au/garvan
+
+#######
+
+# login yoda (remote)
+ssh -D 8080 yoda-login
+
+# CellRegMap revisions
+/hps/nobackup/stegle/users/acuomo/all_scripts/struct_LMM2/sc_endodiff/debug_May2021/REVISION/
+
+# find screens 
+screen -ls
+screen -r MYSCREEN
+ctrl+a+d to exit screen
+
+# scp from cluster to machine and viceversa
+scp acuomo@yoda-login.ebi.ac.uk:/FILE_ON_CLUSTER FOLDER_ON_MACHINE
+
+# submit interactive job
+bsub -M 60000 -R "rusage[mem=60000]" -Is $SHELL
+
+# submit job for notebooks
+bsub -q highpri -R "rusage[mem=60000]" -M 60000 -n 10 jupyter notebook --no-browser --port=9287
+
+# then go to: 
+http://hh-yoda-08-03.ebi.ac.uk:9287/notebooks/
+(check bjobs and change 08-03 accordingly, password 3244ok)
+
+# activate environment
+conda activate MYENV
+
+# where am I
+pwd
+# what is in this folder 
+ls
+# move to folder (change directory)
+cd
+# remove (recursively)
+rm (-r)
+# move
+mv
+# copy
+cp
+
+# python
+if / else
+try / except
+
+"continue" in python is equivalent to "next" in R
+
+R "gsub" equivalent in python:
+import re
+re.sub("","",str)
+
+rsid for genomic coordinates
+cd /hps/nobackup/hipsci/scratch/genotypes/snp_annotation/
+zcat chr19_snps_ensembl_biomart_01122017.txt.gz | grep 5783634
