@@ -16,9 +16,10 @@ ssh -D 8080 yoda-login
 # CellRegMap revisions
 /hps/nobackup/stegle/users/acuomo/all_scripts/struct_LMM2/sc_endodiff/debug_May2021/REVISION/
 
-# find screens 
-screen -ls
-screen -r MYSCREEN
+# screens (e.g. to run interactive jobs, they will continue running in the background) 
+screen -S MYSCREEN to start new screen
+screen -ls to find active screens
+screen -r MYSCREEN to enter a screen
 ctrl+a+d to exit screen
 
 # scp from cluster to machine and viceversa
