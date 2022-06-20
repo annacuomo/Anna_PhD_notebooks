@@ -1,1 +1,7 @@
 *.pyc
+
+## folders
+*/.ipynb_checkpoints/
+
+## files
+*/.RData*
