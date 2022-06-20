@@ -5,4 +5,9 @@
 
 ## files
 **/.RData*
+
+### large files
 CellRegMap/endodiff/look_at_clusters.ipynb
+CellRegMap/endodiff/July_2021/endodiff_examples.ipynb
+CellRegMap/endodiff/REVISION/Calibration/stratify_genes.ipynb
+CellRegMap/endodiff/REVISION/SUSIE/susie_results.ipynb
