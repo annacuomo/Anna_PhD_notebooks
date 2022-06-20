@@ -1,0 +1,2 @@
+feature_id	chromosome	start	end	n_samples	n_e_samples	alpha_param	beta_param	rho
+ENSG00000087903	19	5993175	6199583	27598	99	2.3025191923189885	46.56587117067314	0.9

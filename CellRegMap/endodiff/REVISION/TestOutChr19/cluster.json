@@ -1,0 +1,8 @@
+{
+    "__default__" :
+    {
+    "memory" : "20GB",
+    "n" : 2,
+    "queue": "long"
+    }
+}
